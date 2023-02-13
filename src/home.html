@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+        <div class="toppage">
+          <div class="toppage__container">
+            <div class="breadcumbs__item breadcumbs__item_back">
+              <a href="javascript:void(0);" onclick="history.back()" class="breadcumbs__back breadcumbs__link" hidden>
+                <span>назад</span>
+              </a>
+            </div>
+            <ul class="toppage__breadcumbs breadcumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcumbs__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                  <a href="#" class="breadcumbs__link" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                    <meta itemprop="position" content="1">
+                  </a>
+                </li>
+            </ul>
+            <a href="tel:83472163300" data-da=".header__content, 767" class="toppage__phone _md4dn">
+              <img src="@img/footer/phone.svg" alt="image">
+              <span>+7 (347) 216-33-00</span>
+            </a>
+          </div>
+        </div> 
+        <section class="hero">
+          <img src="@img/home/cards_bg.png" alt="background-image" class="hero__bg">
+          <div class="hero__wrapper">
+            <div class="hero__container">
+              <div class="hero__slider slider-hero swiper">
+                <div class="slider-hero__wrapper swiper-wrapper">
+                  <div class="slider-hero__slide swiper-slide">
+                    <a href="#" class="slider-hero__item item-hero">
+                      <div class="item-hero__head">породоразрушающий<br>
+                        инструмент</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_1.png" alt="image" style="--mobmw: 20%">
+                          <img src="@img/home/cards_2.png" alt="image" style="--mobmw: 20%">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-hero__item item-hero item-hero_small">
+                      <div class="item-hero__head">фрезерующий<br>
+                        инструмент</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_3.png" alt="image" style="--mobmw: 30%">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-hero__item item-hero item-hero_small">
+                      <div class="item-hero__head">ловильный<br>
+                        инструмент</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_4.png" alt="image"  style="--mobmw: 25%">
+                          <img src="@img/home/cards_5.png" alt="image"  style="--mobmw: 25%">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-hero__item item-hero">
+                      <div class="item-hero__head">элементы бурильной<br>
+                        колоны и нкт</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_6.png" alt="image" style="--mobmw: 14%">
+                          <img src="@img/home/cards_7.png" alt="image" style="--mobmw: 14%">
+                          <img src="@img/home/cards_8.png" alt="image" style="--mobmw: 14%">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="slider-hero__slide swiper-slide">
+                    <a href="#" class="slider-hero__item item-hero item-hero_small">
+                      <div class="item-hero__head">вспомогательный<br>
+                        инструмент</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_9.png" alt="image" style="--mobmw: 25%">
+                          <img src="@img/home/cards_10.png" alt="image" style="--mobmw: 25%">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-hero__item item-hero item-hero_small">
+                      <div class="item-hero__head">оборудование<br>
+                        для очистки</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_11.png" alt="image" style="--mobmw: 40%">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-hero__item item-hero">
+                      <div class="item-hero__head">инструмент вырезания<br>
+                        окна в обсадной колоне</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_12.png" alt="image" style="--mobmw: 14%">
+                          <img src="@img/home/cards_13.png" alt="image" style="--mobmw: 14%">
+                          <img src="@img/home/cards_14.png" alt="image" style="--mobmw: 14%">
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-hero__item item-hero item-hero_grey">
+                      <div class="item-hero__head">услуги <br>
+                        телеметрии</div>
+                      <div class="item-hero__body">
+                        <div class="item-hero__more">подробнее</div>
+                        <div class="item-hero__images">
+                          <img src="@img/home/cards_special.png" alt="image">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="slider-hero__navigation">
+                  <div class="slider-hero__arrow slider-hero__arrow_prev hexagon" style="--bgc: #DE912F; --hex-side: 10px">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.27231 7.5L9 1.6664L7.36385 0L0 7.5L7.36385 15L9 13.3336L3.27231 7.5Z" fill="#fff"/>
+                    </svg>
+                  </div>
+                  <div class="slider-hero__pagination"></div>
+                  <div class="slider-hero__arrow slider-hero__arrow_next hexagon" style="--bgc: #DE912F; --hex-side: 10px">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.72769 7.5L0 1.6664L1.63615 0L9 7.5L1.63615 15L0 13.3336L5.72769 7.5Z" fill="#fff"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info" style="--transparentStroke: #fff">
+          <div class="info__cnt">
+            <div class="info__slider swiper">
+              <div class="info__wrapper swiper-wrapper">
+                <div class="info__slide slide-info swiper-slide">
+                  <div class="slide-info__content">
+                    <div class="slide-info__logo">
+                      <img src="@img/logo_blue_word.svg" alt="image">
+                    </div>
+                    <div class="slide-info__text">
+                      Общество с ограниченной ответственностью «Уфабурмаш» создано в 2010 году набазе закрытого акционерного общества «АРТ-Оснастка». Мы вышли на рынок с геологоразведочным оборудованием для предприятий, занимающихся бурением инженерно-геологических, поисковых и технических скважин. А затем освоили производство оборудования и инструмента для бурения и ремонта скважин.
+                      Сегодня мы сотрудничаем с ведущими зарубежными и российскими нефтесервисными компаниями, профильными подразделениями вертикально интегрированных нефтяных компаний ихолдингов.
+                    </div>
+                    <div class="slide-info__sidetext">ИСТОРИЯ</div>
+                  </div>
+                  <div class="slide-info__image">
+                    <img src="@img/home/slider_1.png" alt="image">
+                    <div class="slide-info__transparent section-transparent">
+                      работаем<br> &nbsp;с 2010
+                    </div>
+                  </div>
+                </div>
+                <div class="info__slide slide-info swiper-slide">
+                  <div class="slide-info__content">
+                    <div class="slide-info__logo">
+                      <img src="@img/logo_blue_word.svg" alt="image">
+                    </div>
+                    <div class="slide-info__text">
+                      «Уфабурмаш» — предприятие спрекрасной репутацией и продуманной философией работы. В процессе изготовления продукции компания «Уфабурмаш» строго
+                      соблюдает нормы и правила собственных технических условий ТУ, которые вполной мере отвечают нормативам общепринятых ипроверенных временем стандартов ГОСТ, современных национальных стандартов РСТ
+                      истандартов американского нефтяного института АPI.
+                      С Востока мы руководствуемся учением опостоянном совершенствовании «Kaizen», а с Запада — прагматичным ивыверенным набором требований «ISO 9001:2008 Системы менеджмента качества». Соединение Востока сЗападом способствует балансу, определяет нашу устойчивость.
+                    </div>
+                    <div class="slide-info__sidetext">ПОДХОД</div>
+                  </div>
+                  <div class="slide-info__image">
+                    <img src="@img/home/slider_2.png" alt="image">
+                    <div class="slide-info__transparent section-transparent">Kaizen <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ISO</div>
+                  </div>
+                </div>
+                <div class="info__slide slide-info swiper-slide">
+                  <div class="slide-info__content">
+                    <div class="slide-info__logo">
+                      <img src="@img/logo_blue_word.svg" alt="image">
+                    </div>
+                    <div class="slide-info__text">
+                      «Уфабурмаш» — предприятие, открытое для новых решений, новых контактов, новых идей.
+                      Мы производим продукцию, которая помогает достигать совместных целей. Мы видим себя не как завод, выпускающий перечень изделий, а как центр решения проблем, сложных проектных, производственных и инженерных задач наших клиентов.
+                      На страницах этого каталога мы познакомим вас с наиболее популярными видами нашей продукции и подчеркнём, что каталог их не исчерпывает—мы готовы разрабатывать для вас технические решения с учётом специфики конкретно ваших задач. Мы готовы развивать ваше производство, расти нарынке и двигаться
+                      к новым достижениям вместе!
+                    </div>
+                    <div class="slide-info__sidetext">ИДЕАЛЫ </div>
+                  </div>
+                  <div class="slide-info__image">
+                    <img src="@img/home/slider_3.png" alt="image">
+                    <div class="slide-info__transparent section-transparent">Новые <br> &nbsp;решения</div>
+                  </div>
+                </div>
+              </div>
+              <div class="info__navigation">
+                <div class="slider-hero__pagination"></div>
+                <div class="info__arrows">
+                  <div class="slider-hero__arrow slider-hero__arrow_prev hexagon" style="--bgc: #DE912F; --hex-side: 10px">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.27231 7.5L9 1.6664L7.36385 0L0 7.5L7.36385 15L9 13.3336L3.27231 7.5Z" fill="#fff"/>
+                    </svg>
+                  </div>
+                  <div class="slider-hero__arrow slider-hero__arrow_next hexagon" style="--bgc: #DE912F; --hex-side: 10px">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.72769 7.5L0 1.6664L1.63615 0L9 7.5L1.63615 15L0 13.3336L5.72769 7.5Z" fill="#fff"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mech">
+          <div class="mech__container">
+            <div class="mech__head section-head">
+              <h2 class="mech__title section-title">Механика взаимодействия</h2>
+            </div>
+            <div class="mech__body">
+              <div class="mech__slider slider-mech swiper">
+                <div class="slider-mech__wrapper swiper-wrapper">
+                  <div class="slider-mech__slide swiper-slide">
+                    <div class="slider-mech__top slider-mech__top_center">
+                      <div class="slider-mech__number">
+                        <img src="@img/home/mech_number_1.svg" alt="image">
+                      </div>
+                      <div class="slider-mech__iconwrap">
+                        <div class="slider-mech__icon">
+                          <img src="@img/home/mech_1.svg" alt="image" style="max-width: 63%;">
+                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="slider-mech__arrow"></div>
+                      </div>
+                    </div>
+                    <div class="slider-mech__content">
+                      <h4 class="slider-mech__title">
+                        Свяжитесь с нами удобным вам спобом
+                      </h4>
+                      <p class="slider-mech__text">
+                        Наши менеджеры 
+                        будут рады помочь вам
+                        в решении ваших задач, не зависимо от сложности проекта.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-mech__slide swiper-slide">
+                    <div class="slider-mech__top slider-mech__top_bottom">
+                      <div class="slider-mech__number">
+                        <img src="@img/home/mech_number_2.svg" alt="image">
+                      </div>
+                      <div class="slider-mech__iconwrap">
+                        <div class="slider-mech__icon">
+                          <img src="@img/home/mech_2.svg" alt="image" style="max-width: 45%;">
+                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="slider-mech__arrow slider-mech__arrow_top"></div>
+                      </div>
+                    </div>
+                    <div class="slider-mech__content">
+                      <h4 class="slider-mech__title">
+                        Мы предоставим варианты решения
+                      </h4>
+                      <p class="slider-mech__text">
+                        Наши специалисты могут 
+                        предоставить вам коммерческое предложение
+                        по вашему техническому заданию в кратчайшие сроки.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-mech__slide swiper-slide">
+                    <div class="slider-mech__top slider-mech__top_center">
+                      <div class="slider-mech__number slider-mech__number_bottom">
+                        <img src="@img/home/mech_number_3.svg" alt="image">
+                      </div>
+                      <div class="slider-mech__iconwrap">
+                        <div class="slider-mech__icon">
+                          <img src="@img/home/mech_3.svg" alt="image" style="max-width: 47%;">
+                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="slider-mech__arrow"></div>
+                      </div>
+                    </div>
+                    <div class="slider-mech__content">
+                      <h4 class="slider-mech__title">
+                        Заключим договор
+                        по техническому <br>
+                        заданию 
+                      </h4>
+                      <p class="slider-mech__text">
+                        Составление договора
+                        важная деталь нашего сотрудничества. Мы опишим 
+                        всю информацию, которая 
+                        для вас важна.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-mech__slide swiper-slide">
+                    <div class="slider-mech__top slider-mech__top_bottom">
+                      <div class="slider-mech__number">
+                        <img src="@img/home/mech_number_4.svg" alt="image">
+                      </div>
+                      <div class="slider-mech__iconwrap">
+                        <div class="slider-mech__icon">
+                          <img src="@img/home/mech_4.svg" alt="image" style="max-width: 77%;">
+                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="slider-mech__content">
+                      <h4 class="slider-mech__title">
+                        Произведем <br>
+                        и отгрузим продукцию
+                      </h4>
+                      <p class="slider-mech__text">
+                        Наши производственные мощности позволяют создавать продукцию в кратчайшие сроки, а опытные логисты отработают все варианты доставки.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-hero__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @@include('html/_yellow.htm',{})
+        <section class="geography" style="--transparentStroke: #7F7F7F">
+          <div class="geography__container">
+            <div class="geography__head section-head">
+              <h2 class="geography__title section-title">География присутствия</h2>
+            </div>
+            <div class="geography__body">
+              <div class="geography__transparent section-transparent">8 стран <br> &nbsp;28 регионов</div>
+              <div class="geography__map">
+                <img src="@img/home/map.png" alt="image">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="showing">
+          <div class="showing__wrapper">
+            <div class="showing__container">
+              <div class="showing__head section-head section-head_white">
+                <h2 class="showing__title section-title">Наша показатели</h2>
+              </div>
+              <div class="showing__body">
+                <div class="showing__item">
+                  <div class="showing__number">150+</div>
+                  <div class="showing__text">сотрудников</div>
+                </div>
+                <div class="showing__item">
+                  <div class="showing__number">250</div>
+                  <div class="showing__text">собственных <br>
+                    разработок</div>
+                </div>
+                <div class="showing__item">
+                  <div class="showing__number">24</div>
+                  <div class="showing__text">зарегистрированных<br>
+                    патентов</div>
+                </div>
+                <div class="showing__item">
+                  <div class="showing__number">3500</div>
+                  <div class="showing__text">метров<sup>2</sup> площадей<br>
+                    производства</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="clients">
+          <div class="clients__container">
+            <div class="clients__head section-head section-head_grey">
+              <div class="clients__title section-title">Наша клиенты</div>
+              <div class="clients__subtitle section-subtitle">Наша специфика работы
+                позволяет работать со множенством компаний разных масштабов</div>
+              <div class="clients__link">документы</div>
+            </div>
+            <div class="clients__body">
+              <div class="clients__slider slider-clients swiper">
+                <div class="slider-clients__wrapper swiper-wrapper">
+                  <a href="#" class="slider-clients__slide swiper-slide">
+                    <img src="@img/home/clients_1.svg" alt="image">
+                  </a>
+                  <a href="#" class="slider-clients__slide swiper-slide">
+                    <img src="@img/home/clients_2.svg" alt="image">
+                  </a>
+                  <a href="#" class="slider-clients__slide swiper-slide">
+                    <img src="@img/home/clients_3.svg" alt="image">
+                  </a>
+                  <a href="#" class="slider-clients__slide swiper-slide">
+                    <img src="@img/home/clients_4.svg" alt="image">
+                  </a>
+                </div>
+                <div class="slider-clients__navigation">
+                  <div class="slider-clients__arrow slider-clients__arrow_prev hexagon" style="--bgc: #fff; --hex-side: 10px">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.27231 7.5L9 1.6664L7.36385 0L0 7.5L7.36385 15L9 13.3336L3.27231 7.5Z" fill="#4E4E4E"/>
+                    </svg>
+                  </div>
+                  <div class="slider-clients__arrow slider-clients__arrow_next hexagon" style="--bgc: #fff; --hex-side: 10px">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.72769 7.5L0 1.6664L1.63615 0L9 7.5L1.63615 15L0 13.3336L5.72769 7.5Z" fill="#4E4E4E"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="companies">
+          <div class="companies__container">
+            <div class="companies__head section-head">
+              <h2 class="companies__title section-title">Связанные компании</h2>
+            </div>
+            <div class="companies__body">
+              <div class="companies__item">
+                <div class="companies__logo">
+                  <img src="@img/logo_grey.svg" alt="image">
+                  <p>Лого</p>
+                </div>
+                <div class="companies__content">
+                  <h4 class="companies__name">Название</h4>
+                  <p class="companies__description">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                  <a href="#" class="companies__link">подробнее</a>
+                </div>
+              </div>
+              <div class="companies__item">
+                <div class="companies__logo">
+                  <img src="@img/logo_grey.svg" alt="image">
+                  <p>Лого</p>
+                </div>
+                <div class="companies__content">
+                  <h4 class="companies__name">Название</h4>
+                  <p class="companies__description">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                  <a href="#" class="companies__link">подробнее</a>
+                </div>
+              </div>
+              <div class="companies__item">
+                <div class="companies__logo">
+                  <img src="@img/logo_grey.svg" alt="image">
+                  <p>Лого</p>
+                </div>
+                <div class="companies__content">
+                  <h4 class="companies__name">Название</h4>
+                  <p class="companies__description">
+                    Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание
+                  </p>
+                  <a href="#" class="companies__link">подробнее</a>
+                </div>
+              </div>
+              <div class="companies__item">
+                <div class="companies__logo">
+                  <img src="@img/logo_grey.svg" alt="image">
+                  <p>Лого</p>
+                </div>
+                <div class="companies__content">
+                  <h4 class="companies__name">Название</h4>
+                  <p class="companies__description">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                  <a href="#" class="companies__link">подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"породоразрушающий инструмент"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page_category">
+        <div class="toppage">
+          <div class="toppage__container">
+            <div class="breadcumbs__item breadcumbs__item_back">
+              <a href="javascript:void(0);" onclick="history.back()" class="breadcumbs__back breadcumbs__link">
+                <span>назад</span>
+              </a>
+            </div>
+            <ul class="toppage__breadcumbs breadcumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcumbs__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                  <a href="#" class="breadcumbs__link" itemprop="item">
+                    <span itemprop="name">категории продукции</span>
+                    <meta itemprop="position" content="1">
+                  </a>
+                </li>
+                <li class="breadcumbs__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                  <a href="#" class="breadcumbs__link" itemprop="item">
+                    <span itemprop="name">породоразрушающий инструмент</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                </li>
+            </ul>
+            <a href="tel:83472163300" data-da=".header__content, 767" class="toppage__phone _md4dn">
+              <img src="@img/footer/phone.svg" alt="image">
+              <span>+7 (347) 216-33-00</span>
+            </a>
+          </div>
+        </div> 
+        <section class="hero">
+          <img src="@img/home/cards_bg.png" alt="background-image" class="hero__bg">
+          <div class="hero__wrapper">
+            <div class="hero__container">
+              <div class="hero__products products-hero">
+                <div class="products-hero__body">
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 155,6 <br>
+                      SD 513DT</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_1.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 123,8 <br>
+                      SD 413D</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_2.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 215,9 <br>
+                      SD 6 16 BDN</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_3.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 215,9 <br>
+                      SD 7 13 BDN</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_4.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 215,9 <br>
+                      SD 4 19 DTN</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_5.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 295,3 <br>
+                      SD 5 19 ADN</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_6.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 393,7 <br>
+                      SD 419 ADTN</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_7.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="products-hero__item">
+                    <div class="products-hero__title">UBM 444,5 <br>
+                      SD 419 ADN</div>
+                    <div class="products-hero__more">подбробнее</div>
+                    <div class="products-hero__image">
+                      <img src="@img/products/products_8.png" alt="image">
+                    </div>
+                  </a>
+                </div>
+                <div data-filters class="products-hero__filters filters-hero">
+                  <div class="filters-hero__buttons">
+                    <button type="button" class="filters-hero__more btn">загрузить больше</button>
+                    <button type="button" data-filters-open class="filters-hero__open btn btn_orange">поиск по фильтру</button>
+                  </div>
+                  <div data-filters-body class="filters-hero__filters">
+                    <button data-filters-close type="button" class="filters-hero__close">
+                      <img src="@img/icons/close.svg" alt="image">
+                    </button>
+                    <div class="filters-hero__body">
+                      <div class="filters-hero__column">
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Шифр производителя</span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" checked id="filters-hero__checkbox_1" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_1" class="filters-hero__label">UBM</label>
+                          </div>
+                        </div>
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Диаметр</span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="number" placeholder="введите данные" class="filters-hero__text">
+                          </div>
+                        </div>
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Материал корпуса</span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" checked id="filters-hero__checkbox_2" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_2" class="filters-hero__label">сталь</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_3" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_3" class="filters-hero__label">матричный</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filters-hero__column">
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Количество лопастей</span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="number" placeholder="введите данные" class="filters-hero__text">
+                          </div>
+                        </div>
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Диаметр резцов</span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="number" placeholder="введите данные" class="filters-hero__text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filters-hero__column">
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Серия долот</span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_4" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_4" class="filters-hero__label">бурение ВЗД</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_5" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_5" class="filters-hero__label">бурение РУС</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_6" checked class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_6" class="filters-hero__label">Высокомоментное долото</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_7" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_7" class="filters-hero__label">Для горнорудной пр.</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_8" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_8" class="filters-hero__label">Бицентричное</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_9" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_9" class="filters-hero__label">Специальное</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_10" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_10" class="filters-hero__label">Бурголовка для о отбора керна</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_11" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_11" class="filters-hero__label">Долото для проработки</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filters-hero__column">
+                        <div class="filters-hero__item" data-filters-item>
+                          <div class="filters-hero__name">
+                            <span>Опции </span>
+                            <button data-filters-sbros class="filters-hero__sbros" type="button">
+                              <img src="@img/icons/close.svg" alt="image">
+                            </button>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_12" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_12" class="filters-hero__label">Антистрессовые вставки</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_13" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_13" class="filters-hero__label">Второй ряд вооружения</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_14" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_14" class="filters-hero__label">Сокращенная геометрия</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_15" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_15" class="filters-hero__label">Резцы обратной проработки</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_16" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_16" class="filters-hero__label">Алмазные антистрессоые
+                              вставки второго ряда</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_17" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_17" class="filters-hero__label">Удлиненная калибрующая ч.</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_18" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_18" class="filters-hero__label">Триммер на калибрующей ч.</label>
+                          </div>
+                          <div class="filters-hero__inputwrap">
+                            <input type="checkbox" id="filters-hero__checkbox_19" class="filters-hero__checkbox">
+                            <label for="filters-hero__checkbox_19" class="filters-hero__label">Атипичное количество насадок</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="javascript:void(0);" class="filters-hero__ok">ок</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="similar">
+          <div class="similar__container">
+            <div class="similar__body">
+              <div class="similar__slider swiper" data-loop data-slides="5">
+                <div class="similar__wrapper swiper-wrapper">
+                  <a href="#" class="similar__slide swiper-slide">
+                    <div class="similar__name">инструмент <br>
+                      вырезания окна <br>
+                      в обсадной колоне</div>
+                    <div class="similar__image">
+                      <img src="@img/home/cards_13.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="similar__slide similar__slide_lines _linesbg swiper-slide">
+                    <div class="similar__name">услуги<br>
+                      телеметрии</div>
+                    <div class="similar__image">
+                      <img src="@img/home/cards_special.png" alt="image">
+                    </div>
+                  </a>
+                  <a href="#" class="similar__slide swiper-slide">
+                    <div class="similar__name">фрезерующий <br>
+                      инструмент</div>
+                    <div class="similar__image">
+                      <img src="@img/home/cards_3.png" alt="image" style="max-width: 38%">
+                    </div>
+                  </a>
+                  <a href="#" class="similar__slide swiper-slide">
+                    <div class="similar__name">ловильный <br>
+                      инструмент</div>
+                    <div class="similar__image">
+                      <img src="@img/home/cards_4.png" alt="image" style="max-width: 30%">
+                      <img src="@img/home/cards_5.png" alt="image" style="max-width: 30%">
+                    </div>
+                  </a>
+                  <a href="#" class="similar__slide swiper-slide">
+                    <div class="similar__name">оборудование <br>
+                      для очистки</div>
+                    <div class="similar__image">
+                      <img src="@img/home/cards_11.png" alt="image" style="max-width: 50%">
+                    </div>
+                  </a>
+                </div>
+                <div class="similar__navigation">
+                  <div class="similar__arrows">
+                    <div class="similar__arrow similar__arrow_prev hexagon"style="--bgc: #DE912F; --hex-side: 13px">
+                      <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.27231 7.5L9 1.6664L7.36385 0L0 7.5L7.36385 15L9 13.3336L3.27231 7.5Z" fill="#fff"/>
+                      </svg>
+                    </div>
+                    <div class="similar__arrow similar__arrow_next hexagon"style="--bgc: #DE912F; --hex-side: 13px">
+                      <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.72769 7.5L0 1.6664L1.63615 0L9 7.5L1.63615 15L0 13.3336L5.72769 7.5Z" fill="#fff"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="similar__pagination slider-hero__pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,230 @@
+.product {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__wrapper {
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    @include adaptiveValue("padding-bottom", 34, 5, 1920, 480, 1);
+    @include adaptiveValue("gap", 144, 16, 1920, 767, 1);
+    @media (max-width:em(650)){
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+  }
+
+  &__media {
+    min-width: 0;
+    min-height: 0;
+  }
+}
+.info-product {
+  @media (min-width:em(600)){
+    flex: 0 0 rem(390);
+  }
+
+  &__head {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15, 1920, 480, 1);
+    }
+  }
+
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__description {
+    @include adaptiveValue("font-size", 12, 11, 1920, 480, 1);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 26, 18, 1920, 480, 1);
+    }
+  }
+
+  &__tabs {
+  }
+
+  &__special {
+  }
+}
+.tabs-product {
+  &:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 26, 18, 1920, 480, 1);
+  }
+
+  &__navigation {
+    display: flex;
+    @include adaptiveValue("gap", 30, 23, 1920, 480, 1);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 21, 17, 1920, 480, 1);
+    }
+  }
+
+  &__title {
+    color: #fff;
+    background-color: #B0B0B0;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    @include adaptiveValue("min-width", 105, 86, 767, 480, 1);
+    @include adaptiveValue("font-size", 12, 8, 1920, 480, 1);
+    @include adaptiveValue("padding", 13, 8, 1920, 480, 1);
+    @media (min-width:$mobile){
+      flex: 0 1 50%;
+    }
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #818181;
+      }
+    }
+    &._tab-active {
+      background-color: $mainColor;
+    }
+  }
+
+  &__content {
+  }
+
+  &__body {
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: rem(15);
+    @include adaptiveValue("padding-top", 12, 5, 1920, 480, 1);
+    @include adaptiveValue("padding-bottom", 12, 5, 1920, 480, 1);
+    border-bottom: 1px solid #E4E4E4;
+    @include adaptiveValue("font-size", 12, 11, 1920, 480, 1);
+  }
+
+  &__key {
+  }
+
+  &__value {
+  }
+}
+:root {
+  @include adaptiveValue("--spcicwh", 26, 13, 1920, 480, 1);
+}
+.special-product {
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 13, 7, 1920, 480, 1);
+    }
+  }
+
+  &__icon {
+    flex: 0 0 var(--spcicwh);
+    width: var(--spcicwh);
+    height: var(--spcicwh);
+    display: flex;
+    justify-content:center;align-items: center;
+    color: #fff;
+    background-color: $orange;
+    border-radius: 50%;
+    span {
+      @include adaptiveValue("font-size", 19, 10, 1920, 480, 1);
+    }
+
+    &_grey {
+      background-color: $mainColor;
+      span {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__text {
+  }
+}
+.media-product {
+  flex: 1 1 auto;
+
+  &__slider {
+    position: relative;
+    padding: 0 rem(15);
+    max-width: calc(100vw - rem(30));
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+    display: flex;
+    justify-content:center;align-items: center;
+    img {
+      @include adaptiveValue("max-height", 467, 230, 650, 320, 0);
+    }
+  }
+
+  &__navigation {
+  }
+
+  &__arrows {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    left: 1%;
+    width: 98%;
+    pointer-events: none;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    pointer-events: all;
+    &.swiper-button-disabled {
+      background-color: $mainColor;
+      &::before,
+      &::after{
+        background-color: $mainColor;
+      }
+    }
+
+    &_prev {
+    }
+
+    &_next {
+    }
+  }
+
+  &__pagination {
+    justify-content: center;
+    margin-top: rem(6);
+    @include adaptiveValue("gap", 22, 11, 1920, 480, 1);
+    @media (max-width:$mobileSmall){
+      margin-top: rem(20);
+    }
+    .swiper-pagination-bullet {
+      @include adaptiveValue("width", 10, 6, 1920, 480, 1);
+      @include adaptiveValue("height", 10, 6, 1920, 480, 1);
+    }
+  }
+}
+.filters-product {
+  position: absolute;
+  top: 0;
+  right: rem(15);
+}

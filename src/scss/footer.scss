@@ -1,0 +1,129 @@
+//====================================================================================================
+.footer {
+  color: #fff;
+  background-color: $mainColor;
+
+  &__container {
+    display: flex;
+    @include adaptiveValue("column-gap", 60, 30, 1920, 480, 1);
+    @include adaptiveValue("padding-top", 43, 22, 1920, 481, 1);
+    @include adaptiveValue("padding-bottom", 77, 35, 1920, 481, 1);
+    @media (max-width: em(766)){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: rem(30);
+    }
+  }
+
+  &__column {
+  }
+}
+:root {
+  @include adaptiveValue("--ftrhght", 77, 41, 1920, 480, 1);
+}
+.column-footer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15);
+  flex: 1 1 auto;
+
+  &_thin {
+  }
+
+  &__logo {
+    flex: 0 0 var(--ftrhght);
+    height: var(--ftrhght);
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &__list {
+    margin-top: auto;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    transition: all 0.3s ease 0s;
+    @include adaptiveValue("font-size", 12, 8, 1920, 767, 1);
+    @media (any-hover: hover){
+      &:hover{
+        color: $orange;
+      }
+    }
+    &_bold {
+      font-weight: bold;
+      font-size: rem(16);
+      @media (max-width:$mobile){
+        font-size: rem(10);
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+    @include adaptiveValue("padding-top", 30, 15, 1920, 767, 1);
+    span {
+      white-space: nowrap;
+      font-weight: bold;
+      @include adaptiveValue("font-size", 16, 10, 1920, 480, 1);
+    }
+  }
+
+  &__icon {
+    width: rem(22);
+    flex: 0 0 rem(22);
+  }
+
+  &__body {
+    margin-top: auto;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("font-size", 12, 8, 1920, 767, 1);
+    max-width: rem(280);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10, 1920, 480, 1);
+    }
+  }
+
+  &__socials {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(10);
+    @include adaptiveValue("row-gap", 20, 10, 1920, 480, 1);
+    flex-wrap: wrap;
+    .column-footer__title {
+      padding: 0;
+      flex: 1 1 100%;
+    }
+  }
+
+  &__social {
+    flex: 1 1 auto;
+    svg {
+      max-width: rem(35);
+      max-height: rem(26);
+      * {
+        transition: all 0.3s ease 0s;
+      }
+    }
+    @media (any-hover: hover){
+      &:hover{
+        path {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+//====================================================================================================
