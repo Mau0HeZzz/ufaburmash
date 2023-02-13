@@ -296,17 +296,14 @@ function initSliders() {
 			// Брейкпоинты
 			/*
 			*/
-			// breakpoints: {
-			// 	319: {
-			// 		slidesPerView: 2,
-			// 	},
-			// 	480: {
-			// 		slidesPerView: 3,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 4,
-			// 	},
-			// },
+			breakpoints: {
+				319: {
+          enabled: true
+				},
+				1024: {
+          enabled: false
+				},
+			},
 			// События
 			on: {
 

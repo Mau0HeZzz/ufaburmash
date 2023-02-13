@@ -7919,6 +7919,14 @@
                         el: heroPagin,
                         clickable: true
                     },
+                    breakpoints: {
+                        319: {
+                            enabled: true
+                        },
+                        1024: {
+                            enabled: false
+                        }
+                    },
                     on: {}
                 });
             }
@@ -10833,14 +10841,11 @@ PERFORMANCE OF THIS SOFTWARE.
             if (headerOpen) {
                 const iconMenu = document.querySelector(".icon-menu");
                 let top = iconMenu ? iconMenu.getBoundingClientRect().top : 100;
-                headerOpen.style.top = `${top + iconMenu.offsetHeight / 2}px`;
+                headerOpen.style.top = `${top + iconMenu.offsetHeight / 2 - headerOpen.offsetHeight / 2}px`;
                 headerOpen.addEventListener("click", (e => {
                     document.documentElement.classList.contains("menu-open") ? menuClose() : menuOpen();
                 }));
             }
-            window.addEventListener("resize", (e => {
-                menuBodySetTop();
-            }));
             setTimeout((() => {
                 menuBodySetTop();
             }), 300);
@@ -10852,12 +10857,11 @@ PERFORMANCE OF THIS SOFTWARE.
             })) : null;
             const productInfo = document.querySelector(".info-product");
             const productImgs = document.querySelectorAll(".media-product__slide img");
-            if (productInfo && productImgs.length && !document.querySelector(".news-one")) {
-                productInfoImgsActions(productInfo, productImgs);
-                window.addEventListener("resize", (() => {
-                    productInfoImgsActions(productInfo, productImgs);
-                }));
-            }
+            if (productInfo && productImgs.length && !document.querySelector(".news-one")) productInfoImgsActions(productInfo, productImgs);
+            window.addEventListener("resize", (e => {
+                menuBodySetTop();
+                if (productInfo && productImgs.length && !document.querySelector(".news-one")) productInfoImgsActions(productInfo, productImgs);
+            }));
         }));
         function menuBodySetTop() {
             const menuBody = document.querySelector(".menu__body");

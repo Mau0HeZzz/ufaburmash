@@ -1,15 +1,23 @@
 //====================================================================================================
 .hero {
   position: relative;
+  overflow: hidden;
+  background-size: 100% auto;
+  background-position: top center;
 
   &__bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-position: top center;
+    @media (min-width:$pc){
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width:$pc){
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -202,8 +210,15 @@
     @include adaptiveValue("top", 80, 60, 1920, 767, 1);
     right: calc((100% - rem(1170))/2);
     @media (max-width:$mobile){
-      top: calc(100vw + rem(25));
       right: rem(15);
+    }
+    @media (max-width:$mobile) and (min-width:em(580)){
+      top: auto;
+      bottom: 20%;
+    }
+    @media (max-width:em(580)){
+      top: calc(100vw + rem(25));
+      bottom: auto;
     }
   }
 
@@ -295,7 +310,7 @@
     transform: rotate(-90deg);
     color: #F1F1F1;
     @media (max-width:$pc){
-      left: -14%;
+      left: -7%;
       bottom: 14%;
     }
   }

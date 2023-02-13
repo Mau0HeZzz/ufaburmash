@@ -1,5 +1,7 @@
 .product {
   position: relative;
+  background-size: cover;
+  background-position: top center;
 
   &__bg {
     position: absolute;
