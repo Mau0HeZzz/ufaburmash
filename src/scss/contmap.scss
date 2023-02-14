@@ -58,31 +58,45 @@
 .contacts__head {
 	font-weight: 600;
 	font-size: rem(20);
-	max-width: 45%;
+	max-width: 40%;
 }
 .contacts__title {
 }
 .contacts__body {
-	padding-top:20px;
+	padding-top:rem(70);
+	margin-bottom: rem(20);
 	display: flex;
 	flex-direction: row;
-	flex: 1 1 100%;
+	flex: 0 1 100%;
 }
 .contacts__item {
+	gap: rem(15);
 }
-.item-contacts {
+.item-contacts{
+		display: flex;
+		flex-direction: column;
+		gap: rem(15);
+		flex: 1 1 auto;
 }
 .item-contacts__icon {
-	width: rem(22);
-	flex: 0 0 rem(22);
+	width: rem(33);
+	flex: 0 0 rem(33);
+
 }
 .item-contacts__content {
 	font-size: rem(12);
+	display:flex;
+	flex-direction: column;
+	gap:rem(15);
+	border-top: 1px solid #000;
+	padding-top: rem(10);
 }
 
 .item-contacts__phone {
 	font-size: rem(20);
 	font-weight: 600;
+	display:flex;
+	flex-direction: column;
 }
 
 .item-contacts__subtitle{
