@@ -8,82 +8,95 @@
 			@@include('html/_header.htm',{})
 			<main class="page page_news">
     	   	<div class="toppage">
-          <div class="toppage__container">
-            <div class="breadcumbs__item breadcumbs__item_back">
-              <a href="javascript:void(0);" onclick="history.back()" class="breadcumbs__back breadcumbs__link">
-                <span>назад</span>
-              </a>
-            </div>
-            <ul class="toppage__breadcumbs breadcumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+         <div class="toppage__container">
+         <div class="breadcumbs__item breadcumbs__item_back">
+            <a href="javascript:void(0);" onclick="history.back()" class="breadcumbs__back breadcumbs__link">
+   <span>назад</span>
+   </a>
+      </div>
+      <ul class="toppage__breadcumbs breadcumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
                 <li class="breadcumbs__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                   <a href="#" class="breadcumbs__link" itemprop="item">
                     <span itemprop="name">новости</span>
                     <meta itemprop="position" content="1">
                   </a>
                 </li>
-            </ul>
+      </ul>
             <a href="tel:83472163300" data-da=".header__content, 767" class="toppage__phone _md4dn">
-              <img src="@img/footer/phone.svg" alt="image">
+         <img src="@img/footer/phone.svg" alt="image">
               <span>+7 (347) 216-33-00</span>
             </a>
           </div>
   	      	</div> 
-				<div class="wrapper_content hero__wrapper">
-					<div class="content__container">
-						<div class="content">
-							<div class="content__text">Свяжитесь с нами удобным вам способом,
-								мы будем рады помочь вам в решении
-								ваших задач:
+				  <div class="contacts">
+					<div class="contacts__container hero__wrapper">
+					  <div class="contacts__head">
+						 <h1 class="contacts__title">Свяжитесь с нами удобным вам способом,
+							мы будем рады помочь вам в решении
+							ваших задач:</h1>
+					  </div>
+					  <div class="contacts__body">
+						 <div class="contacts__item item-contacts">
+							<div class="item-contacts__icon">
+								<img src="img/contmap/phone.svg" alt="image">
 							</div>
-					<div class="content__contacts">
-						<div class="content__contacts__item">
-							<p>Телефон/факс</p>
-							<p class="telef">+7 (347) 216-33-00</p>
-						</div>
-						<div class="content__contacts__item">
-							<p>Отдел продаж:
+							<div class="item-contacts__content">
+							  <a href="tel:телефон" class="item-contacts__phone">
+								<span class="item-contacts__subtitle">Телефон/факс:</span>
 								<br>
-								sales@ufaburmash.ru
-								</p>
-								<p>
-									Приемная:
-									<br>
-									office@ufaburmash.ru
-								</p>
-								<p>
-									Отдел снабжения:
-									<br>
-									omto@ufaburmash.ru
-								</p>
-						</div>
-						<div class="content__contacts__item">
-							<p>
-								Юридический адрес:
-								<br>
-								450095, Россия, Башкортостан,
-								<br>
-								г. Уфа, ул. Крайняя, 2, ком.10
-							</p>
-							
-							<p>
-								Почтовый адрес:
-								<br>
-								450095, Россия, Башкортостан,
-								<br>
-								г. Уфа, а/я 79Фактический адрес:
-							</p>
-						</div>
-						<div class="content__contacts__item">
-							<p>
-								450095, Россия, Башкортостан,
-								<br>
-								г. Уфа, ул. Крайняя, 2
-							</p>
-						</div>
+								<span class="item-contacts__number">+ 7 (347) 216-33-00</span>
+							  </a>
+							</div>
+						 </div>
+						 <div class="contacts__item item-contacts">
+							<div class="item-contacts__icon">
+								<img src="img/contmap/emails.svg" alt="image">
+							</div>
+							<div class="item-contacts__content">
+							  <div class="item-contacts__row">
+								 <p>Отдел продаж:</p>
+								 <a href="mailto:">sales@ufaburmash.ru</a>
+							  </div>
+							  <div class="item-contacts__row">
+								 <p>Приемная:</p>
+								 <a href="mailto:">office@ufaburmash.ru</a>
+							  </div>
+							  <div class="item-contacts__row">
+								 <p>Отдел снабжения:</p>
+								 <a href="mailto:">omto@ufaburmash.ru</a>
+							  </div>
+							</div>
+						 </div>
+						 <div class="contacts__item item-contacts">
+							<div class="item-contacts__icon">
+								<img src="img/contmap/location.svg" alt="image">
+							</div>
+							<div class="item-contacts__content">
+							  <div class="item-contacts__row">
+								 <p>Фактический адрес:</p>
+								 <p>450095, Россия, Башкортостан,</p>
+								 <p> г. Уфа, ул. Крайняя, 2</p>
+							  </div>
+							  <div class="item-contacts__row">
+								 <p>Юридический адрес:</p>
+								 <p>450095, Россия, Башкортостан,</p>
+								 <p>г. Уфа, ул. Крайняя, 2, ком.10</p>
+							  </div>
+							</div>
+						 </div>
+						 <div class="contacts__item item-contacts">
+							<div class="item-contacts__icon">123</div>
+							<div class="item-contacts__content">
+							  <div class="item-contacts__row">
+								 <p>Почтовый адрес:</p>
+								 <p>450095, Россия, Башкортостан,</p>
+								 <p>г. Уфа, а/я 79<</p>
+							  </div>
+							</div>
+						 </div>
+					  </div>
 					</div>
-					</div >
-					</div >
-		  </div>
+				 </div>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>

@@ -49,6 +49,54 @@
 	}
 }
 
-.content {
-	display: flex;
+.contacts {
 }
+.contacts__container {
+}
+
+
+.contacts__head {
+	font-weight: 600;
+	font-size: rem(20);
+	max-width: 45%;
+}
+.contacts__title {
+}
+.contacts__body {
+	padding-top:20px;
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 100%;
+}
+.contacts__item {
+}
+.item-contacts {
+}
+.item-contacts__icon {
+	width: rem(22);
+	flex: 0 0 rem(22);
+}
+.item-contacts__content {
+	font-size: rem(12);
+}
+
+.item-contacts__phone {
+	font-size: rem(20);
+	font-weight: 600;
+}
+
+.item-contacts__subtitle{
+	font-size: rem(12);
+}
+
+.item-contacts__phone {
+}
+.item-contacts__subtitle {
+}
+.item-contacts__number {
+}
+.item-contacts__row {
+}
+
+
+
