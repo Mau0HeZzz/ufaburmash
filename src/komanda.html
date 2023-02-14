@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"документы"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page_product">
+        <div class="toppage">
+          <div class="toppage__container">
+            <div class="breadcumbs__item breadcumbs__item_back">
+              <a href="javascript:void(0);" onclick="history.back()" class="breadcumbs__back breadcumbs__link">
+                <span>назад</span>
+              </a>
+            </div>
+            <ul class="toppage__breadcumbs breadcumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li class="breadcumbs__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                  <a href="#" class="breadcumbs__link" itemprop="item">
+                    <span itemprop="name">документы</span>
+                    <meta itemprop="position" content="1">
+                  </a>
+                </li>
+                <li class="breadcumbs__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                  <a href="#" class="breadcumbs__link" itemprop="item">
+                    <span itemprop="name">благодарности</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                </li>
+            </ul>
+            <a href="tel:83472163300" data-da=".header__content, 767" class="toppage__phone _md4dn">
+              <img src="@img/footer/phone.svg" alt="image">
+              <span>+7 (347) 216-33-00</span>
+            </a>
+          </div>
+        </div>
+		  <section class="komanda hero" style="background-image: url(@img/komanda/komanda_bg.png);">
+			<img src="@img/komanda/komanda_bg.png" alt="background-image" class="komanda__bg hero__bg">
+			<div class="komanda__wrapper hero__wrapper">
+			  <div class="komanda__container hero__container">
+				 <div class="komanda__tabs tabs-komanda">
+					<div class="tabs-komanda__navigation">
+					  <div class="tabs-komanda__title section-title _tab-active">Наша команда</div>
+					</div>
+					<div class="tabs-komanda__content">
+					  <div class="tabs-komanda__body">
+						 <div class="tabs-komanda__item">
+							<div class="tabs-komanda__link">
+							  <img src="@img/komanda/chelovek.png" alt="image">
+							</div>
+							<p class="tabs-komanda__name">Константинов <br> Константин <br> Константинович</p>
+							<p class="tabs-komanda__descr">Должность</p>
+							<p class="tabs-komanda__descr">Список заслуг</p>
+						 </div>
+						 <div class="tabs-komanda__item">
+							<div class="tabs-komanda__link">
+							  <img src="@img/komanda/chelovek.png" alt="image">
+							</div>
+							<p class="tabs-komanda__name">Константинов <br> Константин <br> Константинович</p>
+							<p class="tabs-komanda__descr">Должность</p>
+							<p class="tabs-komanda__descr">Список заслуг</p>
+						 </div>
+						 <div class="tabs-komanda__item">
+							<div class="tabs-komanda__link">
+							  <img src="@img/komanda/chelovek.png" alt="image">
+							</div>
+							<p class="tabs-komanda__name">Константинов <br> Константин <br> Константинович</p>
+							<p class="tabs-komanda__descr">Должность</p>
+							<p class="tabs-komanda__descr">Список заслуг</p>
+						 </div>
+						 <div class="tabs-komanda__item">
+							<div class="tabs-komanda__link">
+							  <img src="@img/komanda/chelovek.png" alt="image">
+							</div>
+							<p class="tabs-komanda__name">Константинов <br> Константин <br> Константинович</p>
+							<p class="tabs-komanda__descr">Должность</p>
+							<p class="tabs-komanda__descr">Список заслуг</p>
+						 </div>
+					  </div>
+					</div>
+					<div class="products-hero__filters filters-hero">
+					  <div class="filters-hero__buttons">
+						 <button type="button" class="filters-hero__more btn">загрузить больше</button>
+					  </div>
+					</div>
+				 </div>
+			  </div>
+			</div>
+		 </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
