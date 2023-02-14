@@ -1,53 +1,4 @@
 
-@if ($responsiveType==1) {
-	// Отзывчивая
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
-		@if ($containerPadding>0) {
-			padding: 0 rem(math.div($containerPadding, 2));
-		}
-    @media (max-width:em(1400)) and (min-width: $mobile){
-      padding-left: rem(135);
-    }
-	}
-	[class*="__cnt"] {
-    @media (min-width:$pc){
-      margin-left: calc((100% - rem(1170))/2);
-    }
-    @media (max-width:em(1400)) and (min-width: $mobile){
-      padding-left: rem(135);
-    }
-  }
-} @else {
-	// По брейк-поинтам
-	[class*="__container"] {
-		margin: 0 auto;
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-		} @else {
-			@if ($containerPadding>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $pc) {
-			max-width: rem(970);
-		}
-		@media (max-width: $tablet) {
-			max-width: rem(750);
-		}
-		@media (max-width: $mobile) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-	}
-}
 
 .contacts {
 }
@@ -57,9 +8,14 @@
 
 .contacts__head {
 	font-weight: 600;
-	font-size: rem(20);
+	@include adaptiveValue("font-size", 20, 13, 1920, 768, 1);
 	max-width: 40%;
 }
+
+
+
+
+
 .contacts__title {
 }
 .contacts__body {
@@ -68,7 +24,10 @@
 	display: flex;
 	flex-direction: row;
 	flex: 0 1 100%;
+	gap: rem(35);
 }
+
+
 .contacts__item {
 	gap: rem(15);
 }
@@ -84,23 +43,23 @@
 
 }
 .item-contacts__content {
-	font-size: rem(12);
+	@include adaptiveValue("font-size", 12, 8, 1920, 768, 1);
 	display:flex;
 	flex-direction: column;
 	gap:rem(15);
-	border-top: 1px solid #000;
+	border-top: 2px solid #E4E4E4;
 	padding-top: rem(10);
 }
 
 .item-contacts__phone {
-	font-size: rem(20);
+	@include adaptiveValue("font-size", 20, 13, 1920, 768, 1);
 	font-weight: 600;
 	display:flex;
 	flex-direction: column;
 }
 
 .item-contacts__subtitle{
-	font-size: rem(12);
+	@include adaptiveValue("font-size", 12, 8, 1920, 768, 1);
 }
 
 .item-contacts__phone {
@@ -114,3 +73,29 @@
 
 
 
+#map {
+	@include adaptiveValue("min-height", 606, 470, 1920, 480, 1);
+	filter : grayscale(100%)
+ }
+
+.contacts__body {
+	@include adaptiveValue("gap", 35, 10, 1920, 480, 1);
+	gap: rem(35);
+}
+
+@media (max-width: 320px){
+	.contacts__head {
+		max-width: 100%;
+	}
+	.contacts__body {
+		padding-top: rem(35);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.item-contacts__icon {
+		width: rem(17);
+		flex: 0 0 rem(17);
+	
+	}
+
+}
